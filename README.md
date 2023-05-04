@@ -1,7 +1,13 @@
 # What is Blockchain Product Creator?
-Uses Truffle and Solidity to create a Smart Contract that allows owners to create items, set prices, people to pay, and deliver the goods. The project acts as a medium for consumers to pay for items in ETH or Wei.
+This is an application completed with the aid of a project tutorial, in addition to my own enhancements, that deploys a smart contract on the blockchain. This program:
 
-# How to run the program
+Creates products, characterised by a price and name;<br>
+Gives a unique wallet address to pay for the products; and <br>
+Informs the user when the product has been paid, via MetaMask or otherwise.<br></br>
+This kind of program can be used, say, between a business, who creates a product with its price to generate a secure wallet address, and a client, who will pay the appropriate amount of ETH to that wallet address using Metamask. If the smart contract deems the transaction to be successful, an event can be triggered, like delivery. Here is a link to a video demonstration of the smart contract application:
+https://youtu.be/PsXPXGxkCiY
+
+## How to run the program
 Follow these instructions if you want to run the smart contract using Truffle:<br>
 1. Download "Projects/Blockchain_Development/Projects" as a zip file and extract it.<br>
 2. Install MetaMask and create an account.<br>
@@ -31,7 +37,7 @@ web3.eth.sendTransaction({to:"0xf74d50b19Ea05Fc7aBB2b24D2906680D218671E5", value
 
 Read more about using Truffle here: https://trufflesuite.com/docs/truffle/quickstart.html#truffle-quickstart
 
-# Some suggestions if you face a problem
+## Some suggestions if you face a problem
 The most common errors arise when deploying the contracts, especially if the contract is on the wrong network or hasn't been deployed at all. Please make sure you have done the following:<br>
 - installed all the necessary packages. The versions shouldn't affect it, but I am using npm version 8.1.2 and truffle 5.4.26.
 - go to settings, click "Advanced" and then "reset account". This should restart the nonce (number of transactions so far);<br>
@@ -54,7 +60,7 @@ Other things you could try include: <br>
 
 You should know if the program works if it alerts you with an address and amount that needs to be paid at that address when you click "Create new Item" with the example given. Once the money is paid at the address, you should receive another alert that delivery is ready for that specific item. Object instances should be printed on the console when they go through a new stage.
     
- # Attribution
+ ## Attribution
  Please refer to LICENCE.md<br>
  The source code can be found https://www.udemy.com/course/blockchain-developer/ under Section 7.<br>
  The Source-Code is Distributed under the License: “Attribution CC BY 4.0”.
